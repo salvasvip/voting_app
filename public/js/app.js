@@ -1,5 +1,6 @@
 class ProductList extends React.Component {
     render() {
+        const products = Seed.products.sort(compare)
         const productComponents = Seed.products.map((product) => (
                 <Product
                     key={'product-' + product.id}
@@ -59,5 +60,7 @@ ReactDOM.render(
     <ProductList/>,
     document.getElementById('content')
 )
+
+let compare = (a, b) => b - a
 
 // we stay on page 62
