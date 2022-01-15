@@ -63,4 +63,4 @@ ReactDOM.render(
 
 let compare = (a, b) => b - a
 
-// we stay on page 62
+// we stay on page 67
